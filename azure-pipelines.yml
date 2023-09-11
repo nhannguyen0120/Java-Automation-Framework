@@ -14,7 +14,7 @@ steps:
   # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
   - task: JavaToolInstaller@0
     inputs:
-      versionSpec: '20' # string. Required. JDK version. Default: 8.
+      versionSpec: '17' # string. Required. JDK version. Default: 8.
       jdkArchitectureOption: '64' # 'x64' | 'x86'. Required. JDK architecture.
       jdkSourceOption: 'PreInstalled' # 'AzureStorage' | 'LocalDirectory' | 'PreInstalled'. Required. JDK source.
       #jdkFile: # string. Required when jdkSourceOption == LocalDirectory. JDK file.
@@ -31,7 +31,7 @@ steps:
       mavenPomFile: 'pom.xml'
       mavenOptions: '-Xmx3072m'
       javaHomeOption: 'JDKVersion'
-      jdkVersionOption: '20'
+      jdkVersionOption: '17'
       jdkArchitectureOption: 'x64'
       publishJUnitResults: true
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
