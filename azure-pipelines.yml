@@ -15,7 +15,7 @@ steps:
   - task: JavaToolInstaller@0
     inputs:
       versionSpec: '20' # string. Required. JDK version. Default: 8.
-      jdkArchitectureOption: # 'x64' | 'x86'. Required. JDK architecture.
+      jdkArchitectureOption: '64' # 'x64' | 'x86'. Required. JDK architecture.
       jdkSourceOption: # 'AzureStorage' | 'LocalDirectory' | 'PreInstalled'. Required. JDK source.
       #jdkFile: # string. Required when jdkSourceOption == LocalDirectory. JDK file.
       #azureResourceManagerEndpoint: # string. Required when jdkSourceOption == AzureStorage. Azure subscription.
